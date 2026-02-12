@@ -31,8 +31,8 @@ TITLE:
 HOOK:
 CORE_PHYSICS_CONFLICT:
 WHY_IT_WORKS:
-VISUAL_POTENTIAL_SCORE: (1-10)
-VIRAL_POTENTIAL_SCORE: (1-10)
+VISUAL_POTENTIAL_SCORE: Number (1-10)
+VIRAL_POTENTIAL_SCORE:  Number (1-10)
 END_IDEA
 
 IDEA 2
@@ -40,16 +40,70 @@ TITLE:
 HOOK:
 CORE_PHYSICS_CONFLICT:
 WHY_IT_WORKS:
-VISUAL_POTENTIAL_SCORE: (1-10)
-VIRAL_POTENTIAL_SCORE: (1-10)
+VISUAL_POTENTIAL_SCORE: Number (1-10)
+VIRAL_POTENTIAL_SCORE: Number (1-10)
 END_IDEA
 
 (Continue until IDEA 7)
 
 ---END_IDEAS---
 
-Do not include anything outside the format.`
+Do not include anything outside the format.`;
 
+const idea_02 = `You are writing a calm, physics-rigorous short documentary narration for a US audience.
 
+Tone:
+- NASA / ESA / BBC documentary authority
+- Calm, intellectually precise
+- No hype
+- No clickbait exaggeration
+- No fantasy
+- Everything must obey known physics
 
-export { idea_generate_01 }
+Video Type:
+60–90 second high-retention short documentary.
+
+Selected Idea:
+TITLE: {{TITLE}}
+HOOK: {{HOOK}}
+CORE_PHYSICS_CONFLICT: {{CORE_PHYSICS_CONFLICT}}
+WHY_IT_WORKS: {{WHY_IT_WORKS}}
+
+Write a scene-structured narration.
+
+Rules:
+- 8 to 12 scenes total
+- Each scene 5–10 seconds
+- Logical physics progression
+- Start with tension
+- End with large-scale implication
+- Avoid repeating words
+- Avoid filler transitions like “but here’s the twist”
+- Avoid poetic metaphors
+- Use clear physics language
+
+Output EXACTLY in this machine-readable format:
+
+---BEGIN_NARRATION---
+
+TITLE: {{TITLE}}
+TOTAL_SCENES: X
+ESTIMATED_TOTAL_DURATION_SEC: X
+
+SCENE 1
+DURATION_SEC:
+TEXT:
+END_SCENE
+
+SCENE 2
+DURATION_SEC:
+TEXT:
+END_SCENE
+
+(Continue until final scene)
+
+---END_NARRATION---
+
+Do not include anything outside the format.`;
+
+export { idea_generate_01, idea_02 };
